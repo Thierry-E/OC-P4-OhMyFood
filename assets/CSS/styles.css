@@ -11,17 +11,19 @@
 
 /*Mise en page du header*/
 header {
+  width: 100%;
+  display: grid;
+  place-items: center;
   box-shadow: 0px 0px 5px 5px #d6d6d6;
 }
-header h1 {
-  font-family: "Shrikhand", cursive;
-  font-size: 1.8rem;
-  text-align: center;
-  padding: 10px;
+header .logo {
+  width: 40%;
+  height: 63px;
 }
 
 /*Mise en page du container "location"*/
 .location {
+  width: 100%;
   background-color: #eaeaea;
   display: flex;
   justify-content: center;
@@ -38,6 +40,42 @@ header h1 {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   font-weight: 500;
+}
+
+/*Mise ne page de la section "hero"*/
+.hero {
+  width: 100%;
+  padding-top: 40px;
+  background-color: #f6f6f6;
+  display: grid;
+  place-items: center;
+}
+.hero h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+}
+.hero p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.12rem;
+  font-weight: 300;
+  text-align: center;
+  color: #353535;
+  padding-top: 15px;
+}
+.hero button {
+  width: 70%;
+  height: 50px;
+  background: linear-gradient(#ff79da, #9356dc);
+  border: none;
+  border-radius: 50px;
+  margin: 30px 0 57px 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,5 +1,6 @@
 /*Mise en page du container "location"*/
 .location {
+  width: 100%;
   background-color: $light-grey;
   display: flex;
   justify-content: center;
@@ -15,5 +16,41 @@
     @include text-font;
     font-size: 1rem;
     font-weight: 500;
+  }
+}
+
+/*Mise ne page de la section "hero"*/
+.hero {
+  width: 100%;
+  padding-top: 40px;
+  background-color: $light-grey2;
+  display: grid;
+  place-items: center;
+  & h1 {
+    @include text-font;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    color: $text-black;
+  }
+  & p {
+    @include text-font;
+    font-size: 1.12rem;
+    font-weight: 300;
+    text-align: center;
+    color: $dark-grey;
+    padding-top: 15px;
+  }
+  & button {
+    width: 70%;
+    height: 50px;
+    background: linear-gradient($secondary-color, $primary-color);
+    border: none;
+    border-radius: 50px;
+    margin: 30px 0 57px 0;
+    @include text-font;
+    font-size: 1rem;
+    font-weight: 500;
+    color: $text-white;
   }
 }

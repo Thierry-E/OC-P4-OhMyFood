@@ -1,10 +1,11 @@
 /*Mise en page du header*/
 header {
+  width: 100%;
+  display: grid;
+  place-items: center;
   @include header-shadow;
-  & h1 {
-    @include title-font;
-    font-size: 1.8rem;
-    text-align: center;
-    padding: 10px;
+  & .logo {
+    width: 40%;
+    height: 63px;
   }
 }
