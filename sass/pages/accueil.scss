@@ -1,0 +1,19 @@
+/*Mise en page du container "location"*/
+.location {
+  background-color: $light-grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  padding: 10px 0;
+  margin-top: 5px;
+  & i {
+    width: 16px;
+    height: 20px;
+  }
+  & span {
+    @include text-font;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}
