@@ -14,7 +14,7 @@ header {
   width: 100%;
   display: grid;
   place-items: center;
-  box-shadow: 0px 0px 5px 5px #d6d6d6;
+  box-shadow: 0 0 5px 5px #d6d6d6;
 }
 header .logo {
   width: 40%;
@@ -76,6 +76,8 @@ header .logo {
   font-size: 1rem;
   font-weight: 500;
   color: #ffffff;
+  cursor: pointer;
+  box-shadow: 0 0 10px 0 #b4b4b4;
 }
 
 /*# sourceMappingURL=styles.css.map */

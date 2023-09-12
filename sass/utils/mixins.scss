@@ -9,5 +9,9 @@
 
 //Les ombres
 @mixin header-shadow {
-  box-shadow: 0px 0px 5px 5px darken($light-grey, 8%);
+  box-shadow: 0 0 5px 5px darken($light-grey, 8%);
+}
+
+@mixin shadow-button {
+  box-shadow: 0 0 10px 0 darken($light-grey2, 26%);
 }

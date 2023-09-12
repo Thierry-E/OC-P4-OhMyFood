@@ -52,5 +52,7 @@
     font-size: 1rem;
     font-weight: 500;
     color: $text-white;
+    cursor: pointer;
+    @include shadow-button;
   }
 }
