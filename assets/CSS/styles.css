@@ -80,4 +80,56 @@ header .logo {
   box-shadow: 0 0 10px 0 #b4b4b4;
 }
 
+/*Mise en forme de la section "functioning"*/
+.functioning {
+  width: 100%;
+  counter-reset: steps-functioning;
+}
+.functioning h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #000000;
+  margin: 48px 0 25px 20px;
+  position: relative;
+}
+.functioning div {
+  width: 82%;
+  height: 20px;
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  margin: 20px auto;
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+.functioning div::before {
+  counter-increment: steps-functioning;
+  content: "" counter(steps-functioning);
+  width: 30px;
+  height: 30px;
+  background-color: #9356dc;
+  border-radius: 50%;
+  padding: 5px;
+  display: grid;
+  place-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #ffffff;
+  position: absolute;
+  left: 12px;
+}
+.functioning i {
+  font-size: 20px;
+}
+.functioning span {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #000000;
+}
+
 /*# sourceMappingURL=styles.css.map */

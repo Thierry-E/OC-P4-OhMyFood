@@ -56,3 +56,56 @@
     @include shadow-button;
   }
 }
+/*Mise en forme de la section "functioning"*/
+.functioning {
+  width: 100%;
+  counter-reset: steps-functioning;
+  & h2 {
+    @include text-font;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: $text-black;
+    margin: 48px 0 25px 20px;
+    position: relative;
+  }
+  & div {
+    width: 82%;
+    height: 20px;
+    background-color: $light-grey2;
+    border-radius: 20px;
+    margin: 20px auto;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+  }
+  & div::before {
+    counter-increment: steps-functioning;
+    content: '' counter(steps-functioning);
+    width: 30px;
+    height: 30px;
+    background-color: $primary-color;
+    border-radius: 50%;
+    padding: 5px;
+    display: grid;
+    place-items: center;
+    @include text-font;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: $text-white;
+    position: absolute;
+    left: 12px;
+  }
+
+  & i {
+    font-size: 20px;
+  }
+
+  & span {
+    @include text-font;
+    font-size: 1rem;
+    font-weight: 500;
+    color: $text-black;
+  }
+}
