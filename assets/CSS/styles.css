@@ -1,10 +1,5 @@
-/* Ajout des polices Shrikhand et Roboto.
-utilisation des polices: 
-font-family: 'Roboto', sans-serif;
-font-family: 'Shrikhand', cursive;*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Shrikhand&display=swap');
-
 /*Reset*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Shrikhand&display=swap");
 *,
 ::before,
 ::after {
@@ -13,6 +8,16 @@ font-family: 'Shrikhand', cursive;*/
   box-sizing: border-box;
   text-decoration: none;
   list-style-type: none;
+}
+
+/* Ajout des polices Shrikhand et Roboto.
+utilisation des polices: 
+font-family: 'Roboto', sans-serif;
+font-family: 'Shrikhand', cursive;*/
+/*Les couleurs*/
+/* les fonts*/
+header {
+  border: 2px solid green;
 }
 
 /*# sourceMappingURL=styles.css.map */
