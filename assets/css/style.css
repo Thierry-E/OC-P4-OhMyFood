@@ -79,6 +79,9 @@ header .logo {
   cursor: pointer;
   box-shadow: 0 0 10px 0 #b4b4b4;
 }
+.hero button:hover {
+  opacity: 0.85;
+}
 
 /*Mise en forme de la section "functioning"*/
 .functioning {
@@ -91,7 +94,6 @@ header .logo {
   font-weight: 700;
   color: #000000;
   margin: 48px 0 25px 20px;
-  position: relative;
 }
 .functioning div {
   width: 82%;
@@ -104,6 +106,7 @@ header .logo {
   justify-content: space-around;
   align-items: center;
   gap: 10px;
+  box-shadow: 0 0 10px 0 #b4b4b4;
 }
 .functioning div::before {
   counter-increment: steps-functioning;
@@ -119,8 +122,8 @@ header .logo {
   font-size: 0.9rem;
   font-weight: 500;
   color: #ffffff;
-  position: absolute;
-  left: 12px;
+  position: relative;
+  left: -42px;
 }
 .functioning i {
   font-size: 20px;
@@ -132,4 +135,4 @@ header .logo {
   color: #000000;
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=style.css.map */
