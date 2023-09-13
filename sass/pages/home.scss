@@ -63,6 +63,7 @@
 .functioning {
   width: 100%;
   counter-reset: steps-functioning;
+
   & h2 {
     @include text-font;
     font-size: 1.5rem;
@@ -70,18 +71,21 @@
     color: $text-black;
     margin: 48px 0 25px 20px;
   }
+}
+.all-steps {
   & div {
-    width: 82%;
+    max-width: 82%;
     height: 20px;
     background-color: $light-grey2;
     border-radius: 20px;
     margin: 20px auto;
     padding: 30px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     gap: 10px;
     @include shadow-button;
+    position: relative;
   }
   & div::before {
     counter-increment: steps-functioning;
@@ -97,18 +101,13 @@
     font-size: 0.9rem;
     font-weight: 500;
     color: $text-white;
-    position: relative;
-    left: -42px;
+    position: absolute;
+    left: -14px;
   }
 
   & i {
     font-size: 20px;
-  }
-
-  & span {
-    @include text-font;
-    font-size: 1rem;
-    font-weight: 500;
-    color: $text-black;
+    color: darken($light-grey, 40%);
+    margin-right: 10px;
   }
 }
