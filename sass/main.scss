@@ -1,6 +1,8 @@
 @use './base/reset';
 @use './base/typographie';
+@use './base/bases';
 @use './utils/variables';
 @use './utils/mixins';
 @use './layout/header';
 @use './pages/home';
+@use './components/cards';
