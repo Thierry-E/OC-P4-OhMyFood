@@ -1,6 +1,6 @@
-@use '../sass/base/reset.scss';
-@use '../sass/base/typographie.scss';
-@use '../sass/utils/variables.scss';
-@use '../sass/utils/mixins.scss';
-@use '../sass/layout/header.scss';
-@use '../sass/pages/home.scss';
+@use './base/reset';
+@use './base/typographie';
+@use './utils/variables';
+@use './utils/mixins';
+@use './layout/header';
+@use './pages/home';
