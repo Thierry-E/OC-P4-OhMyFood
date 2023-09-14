@@ -3,8 +3,8 @@
 
 /*Styles des cards*/
 .cards {
-  width: 95%;
-  height: 280px;
+  width: 90%;
+  height: 234px;
   border-radius: 15px;
   background-color: $text-white;
   position: relative;
@@ -12,7 +12,7 @@
 
 .restaurants-content img {
   width: 100%;
-  height: 204px;
+  height: 154px;
   border-radius: 15px 15px 0 0;
   object-fit: cover;
 }
@@ -40,7 +40,7 @@
 .cards i {
   font-size: 22px;
   position: absolute;
-  top: 226px;
-  left: 255px;
+  top: 182px;
+  left: 240px;
   color: $text-black;
 }

@@ -5,4 +5,6 @@
 @use './utils/mixins';
 @use './layout/header';
 @use './pages/home';
+@use './components/button.scss';
 @use './components/cards';
+@use './components/badge';
