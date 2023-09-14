@@ -1,0 +1,29 @@
+@import '../utils/mixins';
+@import '../utils/variables';
+
+/*Mise en forme du footer*/
+
+footer {
+  width: 100%;
+  background-color: $dark-grey;
+  padding: 22px;
+  padding-top: 30px;
+
+  & .footer-container {
+    display: flex;
+    flex-direction: column;
+
+    & a {
+      @include text-font;
+      font-size: 1rem;
+      font-weight: 500;
+      color: $text-white;
+      margin-bottom: 15px;
+    }
+
+    & i {
+      width: 25px;
+      font-size: 16px;
+    }
+  }
+}

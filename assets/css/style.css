@@ -19,6 +19,21 @@ h2 {
   margin: 40px 0 20px 20px;
 }
 
+h3 {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #10392f;
+}
+
 /*Mise en page du header*/
 header {
   width: 100%;
@@ -30,6 +45,29 @@ header .logo {
   width: 40%;
   height: 63px;
   margin: 25px;
+}
+
+/*Mise en forme du footer*/
+footer {
+  width: 100%;
+  background-color: #353535;
+  padding: 22px;
+  padding-top: 30px;
+}
+footer .footer-container {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-container a {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+footer .footer-container i {
+  width: 25px;
+  font-size: 16px;
 }
 
 /*Mise en page du container "location"*/
@@ -131,6 +169,7 @@ header .logo {
   width: 100%;
   background-color: #f6f6f6;
   padding-top: 10px;
+  padding-bottom: 60px;
 }
 .restaurants .restaurants-content {
   display: flex;
@@ -209,10 +248,6 @@ header .logo {
   width: 30%;
   height: 32px;
   background-color: #99e2d0;
-  font-family: "Roboto", sans-serif;
-  font-size: 1rem;
-  font-weight: 500;
-  color: #10392f;
   padding: 6px 12px;
   position: absolute;
   bottom: 184px;

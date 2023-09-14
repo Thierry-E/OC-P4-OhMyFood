@@ -6,10 +6,6 @@
   width: 30%;
   height: 32px;
   background-color: $tertiary-color;
-  @include text-font;
-  font-size: 1rem;
-  font-weight: 500;
-  color: darken($tertiary-color, 60%);
   padding: 6px 12px;
   position: absolute;
   bottom: 184px;
