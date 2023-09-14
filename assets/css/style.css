@@ -178,6 +178,44 @@ footer .footer-container i {
   gap: 40px;
 }
 
+/*Mise en forme du 1er menu*/
+/*Header*/
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+header .logo {
+  margin-left: 50px;
+}
+header i {
+  font-size: 24px;
+  margin-left: -34px;
+}
+
+/*Mise en forme de l'image du restaurant*/
+.menu-img {
+  position: relative;
+}
+.menu-img img {
+  width: 100%;
+  height: 275px;
+  object-fit: cover;
+}
+
+/*Mise en formede la section "menu"*/
+.menu {
+  width: 100%;
+  height: 500px;
+  background-color: #f6f6f6;
+  border-radius: 40px 40px 0 0;
+  position: absolute;
+  top: 340px;
+}
+.menu .menu-title {
+  padding-top: 30px;
+}
+
 /*Mise en forme du bouton "btn-purple"*/
 .btn-purple {
   max-width: 100%;
