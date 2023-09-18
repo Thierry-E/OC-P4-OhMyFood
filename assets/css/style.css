@@ -34,6 +34,12 @@ h4 {
   color: #10392f;
 }
 
+.euro {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
 /*Mise en page du header*/
 header {
   width: 100%;
@@ -203,7 +209,7 @@ header i {
   object-fit: cover;
 }
 
-/*Mise en formede la section "menu"*/
+/*Mise en forme de la section "menu"*/
 .menu {
   width: 100%;
   height: 500px;
@@ -211,6 +217,9 @@ header i {
   border-radius: 20px 20px 0 0;
   position: absolute;
   top: 340px;
+  /*Mise en forme des entrées du menus */
+  /*Mise en forme des plats du menu*/
+  /*Mise en forme des desserts du menu*/
 }
 .menu .menu-title {
   position: relative;
@@ -225,6 +234,122 @@ header i {
   position: absolute;
   top: 3px;
   right: 30px;
+}
+.menu .entrees {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  margin-top: 25px;
+}
+.menu .entrees h4 {
+  font-weight: 300;
+  margin-left: 15px;
+}
+.menu .entrees .entrees-cards {
+  width: 95%;
+  background-color: #ffffff;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  box-shadow: 0px 4px 15px 0 #e6e6e6;
+  padding: 15px;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+.menu .entrees .entrees-cards .menu-title p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+.menu .entrees .entrees-cards .menu-subtitle {
+  display: flex;
+  justify-content: space-between;
+}
+.menu .entrees .entrees-cards .menu-subtitle p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+}
+.menu .plats {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  padding-top: 35px;
+  background-color: #f6f6f6;
+}
+.menu .plats h4 {
+  font-weight: 300;
+  margin-left: 15px;
+}
+.menu .plats .plats-cards {
+  width: 95%;
+  background-color: #ffffff;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  box-shadow: 0px 4px 15px 0 #e6e6e6;
+  padding: 15px;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+.menu .plats .plats-cards .plats-title p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+.menu .plats .plats-cards .plats-subtitle {
+  display: flex;
+  justify-content: space-between;
+}
+.menu .plats .plats-cards .plats-subtitle p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+}
+.menu .desserts {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  padding-top: 35px;
+  background-color: #f6f6f6;
+}
+.menu .desserts h4 {
+  font-weight: 300;
+  margin-left: 15px;
+}
+.menu .desserts .desserts-cards {
+  width: 95%;
+  background-color: #ffffff;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  box-shadow: 0px 4px 15px 0 #e6e6e6;
+  padding: 15px;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+.menu .desserts .desserts-cards .desserts-title p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+.menu .desserts .desserts-cards .desserts-subtitle {
+  display: flex;
+  justify-content: space-between;
+}
+.menu .desserts .desserts-cards .desserts-subtitle p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
 }
 
 /*Mise en forme du bouton "btn-purple"*/
@@ -301,6 +426,15 @@ header i {
   position: absolute;
   bottom: 184px;
   left: 188px;
+}
+
+/*Soulignement  des entrées, platset desserts*/
+.underline {
+  width: 12%;
+  height: 4px;
+  background-color: #99e2d0;
+  margin-top: -6px;
+  margin-left: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */

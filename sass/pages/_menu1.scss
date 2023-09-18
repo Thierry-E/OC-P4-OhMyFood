@@ -1,0 +1,189 @@
+@import '../utils/mixins';
+@import '../utils/variables';
+
+/*Mise en forme du 1er menu*/
+
+/*Header*/
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  & .logo {
+    margin-left: 50px;
+  }
+
+  & i {
+    font-size: 24px;
+    margin-left: -34px;
+  }
+}
+/*Mise en forme de l'image du restaurant*/
+.menu-img {
+  position: relative;
+  & img {
+    width: 100%;
+    height: 275px;
+    object-fit: cover;
+  }
+}
+
+/*Mise en forme de la section "menu"*/
+.menu {
+  width: 100%;
+  height: 500px;
+  background-color: $light-grey2;
+  border-radius: 20px 20px 0 0;
+  position: absolute;
+  top: 340px;
+
+  & .menu-title {
+    position: relative;
+  }
+  & h2 {
+    @include title-font;
+    font-weight: 400;
+    font-size: 1.275rem;
+  }
+
+  & i {
+    font-size: 24px;
+    position: absolute;
+    top: 3px;
+    right: 30px;
+  }
+
+  /*Mise en forme des entrées du menus */
+  & .entrees {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-top: 25px;
+
+    & h4 {
+      font-weight: 300;
+      margin-left: 15px;
+    }
+
+    & .entrees-cards {
+      width: 95%;
+      background-color: $text-white;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      @include menu-shadow;
+      padding: 15px;
+      margin: 0 auto;
+      margin-top: 5px;
+
+      .menu-title p {
+        @include text-font;
+        font-size: 1.125rem;
+        font-weight: 500;
+      }
+
+      .menu-subtitle {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .menu-subtitle p {
+        @include text-font;
+        font-size: 1rem;
+        font-weight: 300;
+      }
+    }
+  }
+  /*Mise en forme des plats du menu*/
+  & .plats {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding-top: 35px;
+    background-color: $light-grey2;
+
+    & h4 {
+      font-weight: 300;
+      margin-left: 15px;
+    }
+    & .plats-cards {
+      width: 95%;
+      background-color: $text-white;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      @include menu-shadow;
+      padding: 15px;
+      margin: 0 auto;
+      margin-top: 5px;
+
+      .plats-title p {
+        @include text-font;
+        font-size: 1.125rem;
+        font-weight: 500;
+      }
+
+      .plats-subtitle {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .plats-subtitle p {
+        @include text-font;
+        font-size: 1rem;
+        font-weight: 300;
+      }
+    }
+  }
+
+  /*Mise en forme des desserts du menu*/
+  & .desserts {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding-top: 35px;
+    background-color: $light-grey2;
+
+    & h4 {
+      font-weight: 300;
+      margin-left: 15px;
+    }
+    & .desserts-cards {
+      width: 95%;
+      background-color: $text-white;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      @include menu-shadow;
+      padding: 15px;
+      margin: 0 auto;
+      margin-top: 5px;
+
+      .desserts-title p {
+        @include text-font;
+        font-size: 1.125rem;
+        font-weight: 500;
+      }
+
+      .desserts-subtitle {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .desserts-subtitle p {
+        @include text-font;
+        font-size: 1rem;
+        font-weight: 300;
+      }
+    }
+  }
+}
