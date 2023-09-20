@@ -3,54 +3,42 @@
 
 /*Mise en forme du 1er menu*/
 
-/*Header*/
-header {
+/*Mise en forme de l'image*/
+.menu-img img {
   width: 100%;
-  display: flex;
-  justify-content: center;
-
-  & .logo {
-    margin-left: 50px;
-  }
-
-  & i {
-    font-size: 24px;
-    margin-left: -34px;
-  }
-}
-/*Mise en forme de l'image du restaurant*/
-.menu-img {
-  position: relative;
-  & img {
-    width: 100%;
-    height: 275px;
-    object-fit: cover;
-  }
+  height: 238px;
+  object-fit: cover;
 }
 
 /*Mise en forme de la section "menu"*/
+
 .menu {
   width: 100%;
   height: 500px;
   background-color: $light-grey2;
   border-radius: 20px 20px 0 0;
-  position: absolute;
-  top: 340px;
+  display: grid;
+  place-items: center;
+  margin-top: -46px;
+  margin-bottom: 830px;
+  position: relative;
 
   & .menu-title {
+    width: 100%;
     position: relative;
   }
   & h2 {
     @include title-font;
     font-weight: 400;
-    font-size: 1.275rem;
+    font-size: 1.5rem;
+    margin: 30px 0 0 18px;
   }
 
   & i {
     font-size: 24px;
     position: absolute;
-    top: 3px;
-    right: 30px;
+    top: 36px;
+    right: 24px;
   }
 
   /*Mise en forme des entrées du menus */
@@ -185,5 +173,9 @@ header {
         font-weight: 300;
       }
     }
+  }
+  & button {
+    width: 65%;
+    margin: 55px 0;
   }
 }

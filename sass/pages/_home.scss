@@ -1,5 +1,6 @@
 @import '../utils/variables';
 @import '../utils/mixins';
+
 /*Mise en page du container "location"*/
 .location {
   width: 100%;
@@ -100,7 +101,7 @@
   width: 100%;
   background-color: $light-grey2;
   padding-top: 10px;
-  padding-bottom: 60px;
+  padding-bottom: 45px;
 
   & .restaurants-content {
     display: flex;

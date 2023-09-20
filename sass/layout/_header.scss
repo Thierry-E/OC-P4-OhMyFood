@@ -2,12 +2,21 @@
 /*Mise en page du header*/
 header {
   width: 100%;
-  display: grid;
-  place-items: center;
+  height: 64px;
   @include header-shadow;
+  display: flex;
+
   & .logo {
-    width: 40%;
-    height: 63px;
-    margin: 25px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+  }
+
+  & i {
+    display: flex;
+    justify-content: center;
+    margin: 24px 0 0 24px;
   }
 }

@@ -11,6 +11,10 @@
 }
 
 /*Styles généraux*/
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 h2 {
   font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
@@ -32,6 +36,7 @@ h4 {
   font-size: 1rem;
   font-weight: 500;
   color: #10392f;
+  margin-left: 20px;
 }
 
 .euro {
@@ -43,14 +48,21 @@ h4 {
 /*Mise en page du header*/
 header {
   width: 100%;
-  display: grid;
-  place-items: center;
+  height: 64px;
   box-shadow: 0 0 5px 5px #d6d6d6;
+  display: flex;
 }
 header .logo {
-  width: 40%;
-  height: 63px;
-  margin: 25px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+header i {
+  display: flex;
+  justify-content: center;
+  margin: 24px 0 0 24px;
 }
 
 /*Mise en forme du footer*/
@@ -58,7 +70,7 @@ footer {
   width: 100%;
   background-color: #353535;
   padding: 22px;
-  padding-top: 30px;
+  position: relative;
 }
 footer .footer-container {
   display: flex;
@@ -70,10 +82,6 @@ footer .footer-container a {
   font-weight: 500;
   color: #ffffff;
   margin-bottom: 15px;
-}
-footer .footer-container i {
-  width: 25px;
-  font-size: 16px;
 }
 
 /*Mise en page du container "location"*/
@@ -175,7 +183,7 @@ footer .footer-container i {
   width: 100%;
   background-color: #f6f6f6;
   padding-top: 10px;
-  padding-bottom: 60px;
+  padding-bottom: 45px;
 }
 .restaurants .restaurants-content {
   display: flex;
@@ -185,27 +193,10 @@ footer .footer-container i {
 }
 
 /*Mise en forme du 1er menu*/
-/*Header*/
-header {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-header .logo {
-  margin-left: 50px;
-}
-header i {
-  font-size: 24px;
-  margin-left: -34px;
-}
-
-/*Mise en forme de l'image du restaurant*/
-.menu-img {
-  position: relative;
-}
+/*Mise en forme de l'image*/
 .menu-img img {
   width: 100%;
-  height: 275px;
+  height: 238px;
   object-fit: cover;
 }
 
@@ -215,25 +206,30 @@ header i {
   height: 500px;
   background-color: #f6f6f6;
   border-radius: 20px 20px 0 0;
-  position: absolute;
-  top: 340px;
+  display: grid;
+  place-items: center;
+  margin-top: -46px;
+  margin-bottom: 830px;
+  position: relative;
   /*Mise en forme des entrées du menus */
   /*Mise en forme des plats du menu*/
   /*Mise en forme des desserts du menu*/
 }
 .menu .menu-title {
+  width: 100%;
   position: relative;
 }
 .menu h2 {
   font-family: "Shrikhand", cursive;
   font-weight: 400;
-  font-size: 1.275rem;
+  font-size: 1.5rem;
+  margin: 30px 0 0 18px;
 }
 .menu i {
   font-size: 24px;
   position: absolute;
-  top: 3px;
-  right: 30px;
+  top: 36px;
+  right: 24px;
 }
 .menu .entrees {
   width: 100%;
@@ -350,6 +346,10 @@ header i {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   font-weight: 300;
+}
+.menu button {
+  width: 65%;
+  margin: 55px 0;
 }
 
 /*Mise en forme du bouton "btn-purple"*/
