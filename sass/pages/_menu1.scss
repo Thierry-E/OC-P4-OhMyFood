@@ -19,6 +19,7 @@
   display: grid;
   place-items: center;
   position: relative;
+  margin-top: -45px;
 
   & .menu-title {
     width: 100%;
@@ -77,7 +78,7 @@
 
       .menu-subtitle p {
         @include text-font;
-        font-size: 1rem;
+        font-size: 0.938rem;
         font-weight: 300;
       }
     }
@@ -121,7 +122,7 @@
 
       .plats-subtitle p {
         @include text-font;
-        font-size: 1rem;
+        font-size: 0.938rem;
         font-weight: 300;
       }
     }
@@ -166,7 +167,7 @@
 
       .desserts-subtitle p {
         @include text-font;
-        font-size: 1rem;
+        font-size: 0.938rem;
         font-weight: 300;
       }
     }

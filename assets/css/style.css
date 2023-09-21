@@ -207,6 +207,7 @@ footer .footer-container a {
   display: grid;
   place-items: center;
   position: relative;
+  margin-top: -45px;
   /*Mise en forme des entrées du menus */
   /*Mise en forme des plats du menu*/
   /*Mise en forme des desserts du menu*/
@@ -262,7 +263,7 @@ footer .footer-container a {
 }
 .menu .entrees .entrees-cards .menu-subtitle p {
   font-family: "Roboto", sans-serif;
-  font-size: 1rem;
+  font-size: 0.938rem;
   font-weight: 300;
 }
 .menu .plats {
@@ -301,7 +302,7 @@ footer .footer-container a {
 }
 .menu .plats .plats-cards .plats-subtitle p {
   font-family: "Roboto", sans-serif;
-  font-size: 1rem;
+  font-size: 0.938rem;
   font-weight: 300;
 }
 .menu .desserts {
@@ -340,7 +341,7 @@ footer .footer-container a {
 }
 .menu .desserts .desserts-cards .desserts-subtitle p {
   font-family: "Roboto", sans-serif;
-  font-size: 1rem;
+  font-size: 0.938rem;
   font-weight: 300;
 }
 .menu button {

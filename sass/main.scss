@@ -6,8 +6,8 @@
 @use './layout/header';
 @use './layout/footer';
 @use './pages/home';
-@use './pages/menu1.scss';
-@use './components/button.scss';
+@use './pages/menu1';
+@use './components/button';
 @use './components/cards';
 @use './components/badge';
 @use './components/underline-menu';
