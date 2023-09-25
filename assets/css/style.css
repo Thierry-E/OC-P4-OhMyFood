@@ -290,12 +290,6 @@ footer .footer-container a {
   width: 100%;
   position: relative;
 }
-@media screen and (min-width: 1024px) {
-  .menu .menu-title {
-    display: flex;
-    justify-content: center;
-  }
-}
 .menu h2 {
   font-family: "Shrikhand", cursive;
   font-weight: 400;
@@ -346,7 +340,7 @@ footer .footer-container a {
 .menu .entrees .entrees-cards .menu-title p {
   font-family: "Roboto", sans-serif;
   font-size: 1.125rem;
-  font-weight: 500;
+  font-weight: 900;
 }
 .menu .entrees .entrees-cards .menu-subtitle {
   display: flex;
