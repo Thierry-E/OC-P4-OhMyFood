@@ -7,6 +7,13 @@ body {
   // position: relative;
 }
 
+.main {
+  @media screen and (min-width: 1024px) {
+    width: 1440px;
+    margin: 0 auto;
+  }
+}
+
 h2 {
   @include text-font;
   font-size: 1.5rem;
