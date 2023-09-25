@@ -387,9 +387,12 @@ footer .footer-container a {
 }
 
 .cards-texts {
-  width: 70%;
+  min-width: 70%;
   padding: 10px 0 0 15px;
-  line-height: 24px;
+  line-height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
 }
 
 .cards-texts .title-restaurant {
@@ -399,30 +402,34 @@ footer .footer-container a {
   color: #000000;
 }
 
-.cards-texts .citie-restaurant {
+.citie-restaurant {
   font-family: "Roboto", sans-serif;
   font-size: 1.063rem;
   font-weight: 300;
   color: #000000;
+  margin-left: 15px;
 }
 
 .cards i {
   font-size: 22px;
-  position: absolute;
-  top: 182px;
-  left: 240px;
   color: #000000;
+  margin-top: 2px;
+  margin-right: 20px;
 }
 
 /*Mise ne forme du badge "Nouveau"*/
 .badge {
-  width: 30%;
-  height: 32px;
+  width: 4.5rem;
+  height: 28px;
   background-color: #99e2d0;
-  padding: 6px 12px;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.875rem;
+  color: #10392f;
+  display: grid;
+  place-items: center;
   position: absolute;
-  bottom: 184px;
-  left: 188px;
+  top: 18px;
+  right: 20px;
 }
 
 /*Soulignement  des entrées, platset desserts*/

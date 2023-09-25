@@ -18,9 +18,12 @@
 }
 
 .cards-texts {
-  width: 70%;
+  min-width: 70%;
   padding: 10px 0 0 15px;
-  line-height: 24px;
+  line-height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
 }
 
 .cards-texts .title-restaurant {
@@ -30,17 +33,20 @@
   color: $text-black;
 }
 
-.cards-texts .citie-restaurant {
+.citie-restaurant {
   @include text-font;
   font-size: 1.063rem;
   font-weight: 300;
   color: $text-black;
+  margin-left: 15px;
 }
 
 .cards i {
   font-size: 22px;
-  position: absolute;
-  top: 182px;
-  left: 240px;
+  // position: absolute;
+  // top: 182px;
+  // left: 240px;
   color: $text-black;
+  margin-top: 2px;
+  margin-right: 20px;
 }

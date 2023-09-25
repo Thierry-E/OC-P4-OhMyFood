@@ -3,11 +3,15 @@
 
 /*Mise ne forme du badge "Nouveau"*/
 .badge {
-  width: 30%;
-  height: 32px;
+  width: 4.5rem;
+  height: 28px;
   background-color: $tertiary-color;
-  padding: 6px 12px;
+  @include text-font;
+  font-size: 0.875rem;
+  color: darken($tertiary-color, 60%);
+  display: grid;
+  place-items: center;
   position: absolute;
-  bottom: 184px;
-  left: 188px;
+  top: 18px;
+  right: 20px;
 }
