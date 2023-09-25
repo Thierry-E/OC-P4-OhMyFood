@@ -70,10 +70,28 @@ footer {
   width: 100%;
   background-color: #353535;
   padding: 22px;
+  position: relative;
+}
+@media screen and (min-width: 1024px) {
+  footer h3 {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 68px;
+    right: 32px;
+  }
 }
 footer .footer-container {
   display: flex;
   flex-direction: column;
+}
+@media screen and (min-width: 1024px) {
+  footer .footer-container {
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 50px;
+    margin-right: 200px;
+  }
 }
 footer .footer-container a {
   font-family: "Roboto", sans-serif;
@@ -81,6 +99,16 @@ footer .footer-container a {
   font-weight: 500;
   color: #ffffff;
   margin-bottom: 15px;
+}
+@media screen and (min-width: 1024px) {
+  footer .footer-container a {
+    margin-right: 40px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  footer .footer-container a i {
+    padding-right: 5px;
+  }
 }
 
 /*Mise en page du container "location"*/
@@ -119,6 +147,11 @@ footer .footer-container a {
   text-align: center;
   color: #000000;
 }
+@media screen and (min-width: 1024px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+}
 .hero p {
   font-family: "Roboto", sans-serif;
   font-size: 1.12rem;
@@ -132,6 +165,7 @@ footer .footer-container a {
 .functioning {
   width: 100%;
   counter-reset: steps-functioning;
+  margin-bottom: 30px;
 }
 
 .all-steps {
@@ -140,6 +174,13 @@ footer .footer-container a {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+}
+@media screen and (min-width: 1024px) {
+  .all-steps {
+    flex-direction: row;
+    justify-content: center;
+    gap: 5%;
+  }
 }
 .all-steps .step {
   max-width: 82%;
@@ -189,6 +230,14 @@ footer .footer-container a {
   flex-direction: column;
   align-items: center;
   gap: 40px;
+}
+@media screen and (min-width: 1024px) {
+  .restaurants .restaurants-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+  }
 }
 
 /*Mise en forme du 1er menu*/
@@ -377,6 +426,11 @@ footer .footer-container a {
   border-radius: 15px;
   background-color: #ffffff;
   position: relative;
+}
+@media screen and (min-width: 1024px) {
+  .cards {
+    width: 40%;
+  }
 }
 
 .restaurants-content img {

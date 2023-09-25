@@ -8,6 +8,10 @@
   border-radius: 15px;
   background-color: $text-white;
   position: relative;
+
+  @media screen and (min-width: 1024px) {
+    width: 40%;
+  }
 }
 
 .restaurants-content img {
