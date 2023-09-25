@@ -8,6 +8,10 @@
   width: 100%;
   height: 238px;
   object-fit: cover;
+
+  @media screen and (min-width: 1024px) {
+    height: 484px;
+  }
 }
 
 /*Mise en forme de la section "menu"*/
@@ -24,12 +28,21 @@
   & .menu-title {
     width: 100%;
     position: relative;
+
+    @media screen and (min-width: 1024px) {
+      display: flex;
+      justify-content: center;
+    }
   }
   & h2 {
     @include title-font;
     font-weight: 400;
     font-size: 1.5rem;
     margin: 30px 0 0 18px;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 1.75rem;
+    }
   }
 
   & i {
@@ -37,6 +50,11 @@
     position: absolute;
     top: 36px;
     right: 24px;
+
+    @media screen and (min-width: 1024px) {
+      margin-right: 316px;
+      font-size: 26px;
+    }
   }
 
   /*Mise en forme des entrées du menus */
@@ -175,5 +193,14 @@
   & button {
     width: 65%;
     margin: 55px 0;
+
+    @media screen and (min-width: 1024px) {
+      width: 30%;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: 1055px;
+    margin: -45px auto 0 auto;
   }
 }
