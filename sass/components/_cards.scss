@@ -10,7 +10,8 @@
   position: relative;
 
   @media screen and (min-width: 1024px) {
-    width: 40%;
+    width: 35%;
+    height: 314px;
   }
 }
 
@@ -19,6 +20,10 @@
   height: 154px;
   border-radius: 15px 15px 0 0;
   object-fit: cover;
+
+  @media screen and (min-width: 1024px) {
+    height: 230px;
+  }
 }
 
 .cards-texts {
