@@ -30,10 +30,7 @@
     position: relative;
   }
 
-  & h2 {
-    @include title-font;
-    font-weight: 400;
-    font-size: 1.5rem;
+  & h1 {
     margin: 30px 0 0 18px;
 
     @media screen and (min-width: 1024px) {
@@ -41,14 +38,23 @@
     }
   }
 
-  & i {
+  & i,
+  .heart-fra {
     font-size: 24px;
     position: absolute;
     top: 36px;
     right: 24px;
 
     @media screen and (min-width: 1024px) {
-      margin-right: 316px;
+      margin-right: 338px;
+      font-size: 26px;
+    }
+  }
+
+  /*Icone du coeur pour le menu du restaurant "A la Française"*/
+  & .heart-fra {
+    @media screen and (min-width: 1024px) {
+      margin-right: 367px;
       font-size: 26px;
     }
   }

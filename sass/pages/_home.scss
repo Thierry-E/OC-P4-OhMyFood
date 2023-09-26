@@ -29,16 +29,13 @@
   background-color: $light-grey2;
   display: grid;
   place-items: center;
+
   & h1 {
-    @include text-font;
-    font-size: 1.5rem;
-    font-weight: 700;
-    text-align: center;
-    color: $text-black;
     @media screen and (min-width: 1024px) {
       font-size: 2.5rem;
     }
   }
+
   & p {
     @include text-font;
     font-size: 1.12rem;
@@ -126,31 +123,3 @@
     }
   }
 }
-
-// .loader {
-//   border: 2px solid red;
-//   width: 100%;
-//   height: 100vh;
-//   background-color: #c8c8c8;
-//   z-index: 100;
-
-//   & i {
-//     font-size: 40px;
-//     display: flex;
-//     justify-content: center;
-//     animation: loader 1000ms linear infinite;
-//     position: absolute;
-//     top: 15%;
-//     left: 45%;
-//   }
-
-//   @keyframes loader {
-//     0% {
-//       transform: rotate(0deg);
-//     }
-
-//     100% {
-//       transform: rotate(360deg);
-//     }
-//   }
-//}

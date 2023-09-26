@@ -22,6 +22,14 @@ body {
   }
 }
 
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-align: center;
+  color: #000000;
+}
+
 h2 {
   font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
@@ -160,13 +168,6 @@ footer .footer-container a {
   display: grid;
   place-items: center;
 }
-.hero h1 {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.5rem;
-  font-weight: 700;
-  text-align: center;
-  color: #000000;
-}
 @media screen and (min-width: 1024px) {
   .hero h1 {
     font-size: 2.5rem;
@@ -282,6 +283,7 @@ footer .footer-container a {
   place-items: center;
   position: relative;
   margin-top: -45px;
+  /*Icone du coeur pour le menu du restaurant "A la Française"*/
   /*Mise en forme des entrées du menus */
   /*Mise en forme des plats du menu*/
   /*Mise en forme des desserts du menu*/
@@ -290,26 +292,31 @@ footer .footer-container a {
   width: 100%;
   position: relative;
 }
-.menu h2 {
-  font-family: "Shrikhand", cursive;
-  font-weight: 400;
-  font-size: 1.5rem;
+.menu h1 {
   margin: 30px 0 0 18px;
 }
 @media screen and (min-width: 1024px) {
-  .menu h2 {
+  .menu h1 {
     font-size: 1.75rem;
   }
 }
-.menu i {
+.menu i,
+.menu .heart-fra {
   font-size: 24px;
   position: absolute;
   top: 36px;
   right: 24px;
 }
 @media screen and (min-width: 1024px) {
-  .menu i {
-    margin-right: 316px;
+  .menu i,
+  .menu .heart-fra {
+    margin-right: 338px;
+    font-size: 26px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu .heart-fra {
+    margin-right: 367px;
     font-size: 26px;
   }
 }
@@ -445,6 +452,78 @@ footer .footer-container a {
   }
 }
 
+.loader {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.loader h1 {
+  font-family: "Shrikhand", cursive;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 200;
+  text-align: center;
+  margin-top: 50vh;
+  padding-bottom: 20px;
+}
+
+.loader span {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  margin-left: -10px;
+  animation: 3s infinite linear;
+}
+
+.loader span:nth-child(2) {
+  background: #9356dc;
+  animation: kiri 1.2s infinite linear;
+}
+
+.loader span:nth-child(3) {
+  background: #99e2d0;
+  z-index: 100;
+}
+
+.loader span:nth-child(4) {
+  background: #89c8fa;
+  animation: kanan 1.2s infinite linear;
+}
+
+@keyframes kanan {
+  0% {
+    transform: translateX(20px);
+  }
+  50% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateX(20px);
+    z-index: 200;
+  }
+}
+@keyframes kiri {
+  0% {
+    transform: translateX(-20px);
+    z-index: 200;
+  }
+  50% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(-20px);
+  }
+}
 /*Mise en forme du bouton "btn-purple"*/
 .btn-purple {
   max-width: 100%;

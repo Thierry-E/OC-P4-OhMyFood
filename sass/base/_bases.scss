@@ -14,6 +14,14 @@ body {
   }
 }
 
+h1 {
+  @include text-font;
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-align: center;
+  color: $text-black;
+}
+
 h2 {
   @include text-font;
   font-size: 1.5rem;
