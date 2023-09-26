@@ -4,13 +4,15 @@
 .loader {
   width: 100%;
   height: 100%;
-  // background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   z-index: 2;
   position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+  animation: loader 10s ease-in-out;
+  opacity: 1;
 
   & h1 {
     @include title-font;
@@ -24,8 +26,8 @@
   }
 }
 .loader span {
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
   display: inline-block;
   position: absolute;
@@ -72,5 +74,17 @@
   }
   100% {
     transform: translateX(-20px);
+  }
+}
+
+@keyframes loader {
+  0% {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  100% {
+    background-color: rgba(0, 0, 0, 0);
+    opacity: 0;
+    z-index: -10px;
   }
 }

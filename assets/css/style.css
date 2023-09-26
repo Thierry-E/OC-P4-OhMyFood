@@ -462,6 +462,8 @@ footer .footer-container a {
   right: 0;
   bottom: 0;
   left: 0;
+  animation: loader 10s ease-in-out;
+  opacity: 1;
 }
 .loader h1 {
   font-family: "Shrikhand", cursive;
@@ -475,8 +477,8 @@ footer .footer-container a {
 }
 
 .loader span {
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
   display: inline-block;
   position: absolute;
@@ -522,6 +524,16 @@ footer .footer-container a {
   }
   100% {
     transform: translateX(-20px);
+  }
+}
+@keyframes loader {
+  0% {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0);
+    opacity: 0;
+    z-index: -10px;
   }
 }
 /*Mise en forme du bouton "btn-purple"*/
