@@ -60,6 +60,52 @@ h4 {
   font-weight: 700;
 }
 
+/*Animation d'apparition du menu */
+/* les paramètres sont dans l'ordre : 
+1- nom de l'animation
+2- nombres de cycles
+3- style du déroulement de l'animation
+4- durée de l'animation
+5- délai d'attente avant le lancement de l'animation */
+/*Les entrées*/
+.entrees {
+  animation: entrees 1 ease-in 2s;
+}
+
+@keyframes entrees {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*Les plats*/
+.plats {
+  animation: plats 1 ease-in 2s 1s;
+}
+
+@keyframes plats {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*Les desserts*/
+.desserts {
+  animation: desserts 1 ease-in 2s 1.5s;
+}
+
+@keyframes desserts {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /*Mise en page du header*/
 header {
   width: 100%;
@@ -261,6 +307,52 @@ footer .footer-container a {
   }
 }
 
+/*Animation d'apparition du menu */
+/* les paramètres sont dans l'ordre : 
+1- nom de l'animation
+2- nombres de cycles
+3- style du déroulement de l'animation
+4- durée de l'animation
+5- délai d'attente avant le lancement de l'animation */
+/*Les entrées*/
+.entrees {
+  animation: entrees 1 ease-in 2s;
+}
+
+@keyframes entrees {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*Les plats*/
+.plats {
+  animation: plats 1 ease-in 2s 1s;
+}
+
+@keyframes plats {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*Les desserts*/
+.desserts {
+  animation: desserts 1 ease-in 2s 1.5s;
+}
+
+@keyframes desserts {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /*Mise en forme du 1er menu*/
 /*Mise en forme de l'image*/
 .menu-img img {
@@ -327,6 +419,7 @@ footer .footer-container a {
   align-items: flex-start;
   gap: 12px;
   margin-top: 25px;
+  opacity: 1;
 }
 .menu .entrees h4 {
   font-weight: 300;
@@ -366,6 +459,7 @@ footer .footer-container a {
   gap: 12px;
   padding-top: 35px;
   background-color: #f6f6f6;
+  opacity: 1;
 }
 .menu .plats h4 {
   font-weight: 300;
@@ -405,6 +499,7 @@ footer .footer-container a {
   gap: 12px;
   padding-top: 35px;
   background-color: #f6f6f6;
+  opacity: 1;
 }
 .menu .desserts h4 {
   font-weight: 300;
