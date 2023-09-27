@@ -44,10 +44,10 @@
     font-size: 24px;
     position: absolute;
     top: 36px;
-    right: 24px;
+    right: 40px;
 
     @media screen and (min-width: 1024px) {
-      margin-right: 338px;
+      margin-right: 316px;
       font-size: 26px;
     }
   }
@@ -55,7 +55,7 @@
   /*Icone du coeur pour le menu du restaurant "A la Française"*/
   & .heart-fra {
     @media screen and (min-width: 1024px) {
-      margin-right: 367px;
+      margin-right: 344px;
       font-size: 26px;
     }
   }
@@ -68,7 +68,6 @@
     align-items: flex-start;
     gap: 12px;
     margin-top: 25px;
-    opacity: 1;
 
     & h4 {
       font-weight: 300;
@@ -114,7 +113,6 @@
     gap: 12px;
     padding-top: 35px;
     background-color: $light-grey2;
-    opacity: 1;
 
     & h4 {
       font-weight: 300;
@@ -160,7 +158,6 @@
     gap: 12px;
     padding-top: 35px;
     background-color: $light-grey2;
-    opacity: 1;
 
     & h4 {
       font-weight: 300;

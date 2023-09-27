@@ -18,8 +18,12 @@ h1 {
   @include text-font;
   font-size: 1.5rem;
   font-weight: 900;
-  text-align: center;
+  margin-left: 15px;
   color: $text-black;
+
+  @media screen and (min-width: 1024px) {
+    text-align: center;
+  }
 }
 
 h2 {
