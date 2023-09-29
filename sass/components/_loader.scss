@@ -38,7 +38,7 @@
 
 .loader span:nth-child(2) {
   background: $primary-color;
-  animation: kiri 1.2s infinite linear;
+  animation: child2 1.2s infinite linear;
 }
 .loader span:nth-child(3) {
   background: $tertiary-color;
@@ -46,35 +46,7 @@
 }
 .loader span:nth-child(4) {
   background: $fourth-color;
-  animation: kanan 1.2s infinite linear;
-}
-
-@keyframes kanan {
-  0% {
-    transform: translateX(20px);
-  }
-
-  50% {
-    transform: translateX(-20px);
-  }
-
-  100% {
-    transform: translateX(20px);
-    z-index: 200;
-  }
-}
-
-@keyframes kiri {
-  0% {
-    transform: translateX(-20px);
-    z-index: 200;
-  }
-  50% {
-    transform: translateX(20px);
-  }
-  100% {
-    transform: translateX(-20px);
-  }
+  animation: child4 1.2s infinite linear;
 }
 
 @keyframes loader {
@@ -86,5 +58,33 @@
   100% {
     background-color: rgba(0, 0, 0, 0);
     display: none;
+  }
+}
+
+@keyframes child2 {
+  0% {
+    transform: translateX(-20px);
+    z-index: 200;
+  }
+  50% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(-20px);
+  }
+}
+
+@keyframes child4 {
+  0% {
+    transform: translateX(20px);
+  }
+
+  50% {
+    transform: translateX(-20px);
+  }
+
+  100% {
+    transform: translateX(20px);
+    z-index: 200;
   }
 }

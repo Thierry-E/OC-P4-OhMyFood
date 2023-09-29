@@ -8,54 +8,42 @@
 
 /*Les entrées*/
 .entrees {
-  animation: entrees 1 ease-in 2s;
-  transform: translateY(-5%);
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: entries 1 1s ease-out forwards;
 }
 
-@keyframes entrees {
-  0% {
-    opacity: 0;
-    transform: translateY(-5%);
-  }
-
+@keyframes entries {
   100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: none;
   }
 }
 
-/*Les plats*/
+// /*Les plats*/
 .plats {
-  animation: plats 1 ease-in 2s 1s;
-  transform: translateY(-5%);
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: dishes 1 1s 0.5s ease-out forwards;
 }
 
-@keyframes plats {
-  0% {
-    opacity: 0;
-    transform: translateY(-5%);
-  }
-
+@keyframes dishes {
   100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: none;
   }
 }
 
-/*Les desserts*/
+//   /*Les desserts*/
 .desserts {
-  animation: desserts 1 ease-in 2s 1.5s;
-  transform: translateY(-5%);
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: desserts 1 1s 1s ease-out forwards;
 }
 
 @keyframes desserts {
-  0% {
-    opacity: 0;
-    transform: translateY(-5%);
-  }
-
   100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: none;
   }
 }

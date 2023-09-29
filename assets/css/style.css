@@ -65,61 +65,6 @@ h4 {
   font-weight: 700;
 }
 
-/*Animation d'apparition du menu */
-/* les paramètres sont dans l'ordre : 
-1- nom de l'animation
-2- nombres de cycles
-3- style du déroulement de l'animation
-4- durée de l'animation
-5- délai d'attente avant le lancement de l'animation */
-/*Les entrées*/
-.entrees {
-  animation: entrees 1 ease-in 2s;
-  transform: translateY(-5%);
-}
-
-@keyframes entrees {
-  0% {
-    opacity: 0;
-    transform: translateY(-5%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-/*Les plats*/
-.plats {
-  animation: plats 1 ease-in 2s 1s;
-  transform: translateY(-5%);
-}
-
-@keyframes plats {
-  0% {
-    opacity: 0;
-    transform: translateY(-5%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-/*Les desserts*/
-.desserts {
-  animation: desserts 1 ease-in 2s 1.5s;
-  transform: translateY(-5%);
-}
-
-@keyframes desserts {
-  0% {
-    opacity: 0;
-    transform: translateY(-5%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 /*Mise en page du header*/
 header {
   width: 100%;
@@ -197,6 +142,19 @@ footer .footer-container a {
     width: 1440px;
     margin: 0 auto;
   }
+}
+
+/*Animation de l'icône coeur*/
+.anim-heart {
+  transition: all 2s;
+}
+
+.anim-heart:hover {
+  color: transparent;
+  font-weight: bold;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(#ff79da, #9356dc);
 }
 
 /*Mise en page du container "location"*/
@@ -330,52 +288,54 @@ footer .footer-container a {
 5- délai d'attente avant le lancement de l'animation */
 /*Les entrées*/
 .entrees {
-  animation: entrees 1 ease-in 2s;
-  transform: translateY(-5%);
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: entries 1 1s ease-out forwards;
 }
 
-@keyframes entrees {
-  0% {
-    opacity: 0;
-    transform: translateY(-5%);
-  }
+@keyframes entries {
   100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: none;
   }
 }
-/*Les plats*/
 .plats {
-  animation: plats 1 ease-in 2s 1s;
-  transform: translateY(-5%);
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: dishes 1 1s 0.5s ease-out forwards;
 }
 
-@keyframes plats {
-  0% {
-    opacity: 0;
-    transform: translateY(-5%);
-  }
+@keyframes dishes {
   100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: none;
   }
 }
-/*Les desserts*/
 .desserts {
-  animation: desserts 1 ease-in 2s 1.5s;
-  transform: translateY(-5%);
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: desserts 1 1s 1s ease-out forwards;
 }
 
 @keyframes desserts {
-  0% {
-    opacity: 0;
-    transform: translateY(-5%);
-  }
   100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: none;
   }
 }
+/*Animation de l'icône coeur*/
+.anim-heart {
+  transition: all 2s;
+}
+
+.anim-heart:hover {
+  color: transparent;
+  font-weight: bold;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(#ff79da, #9356dc);
+}
+
 /*Mise en forme du 1er menu*/
 /*Mise en forme de l'image*/
 .menu-img img {
@@ -425,13 +385,15 @@ footer .footer-container a {
 @media screen and (min-width: 1024px) {
   .menu i,
   .menu .heart-fra {
-    margin-right: 316px;
-    font-size: 26px;
+    top: 36px;
+    right: 344px;
+    font-size: 28px;
   }
 }
 @media screen and (min-width: 1024px) {
   .menu .heart-fra {
-    margin-right: 344px;
+    top: 36px;
+    right: 376px;
     font-size: 26px;
   }
 }
@@ -604,7 +566,7 @@ footer .footer-container a {
 
 .loader span:nth-child(2) {
   background: #9356dc;
-  animation: kiri 1.2s infinite linear;
+  animation: child2 1.2s infinite linear;
 }
 
 .loader span:nth-child(3) {
@@ -614,33 +576,9 @@ footer .footer-container a {
 
 .loader span:nth-child(4) {
   background: #89c8fa;
-  animation: kanan 1.2s infinite linear;
+  animation: child4 1.2s infinite linear;
 }
 
-@keyframes kanan {
-  0% {
-    transform: translateX(20px);
-  }
-  50% {
-    transform: translateX(-20px);
-  }
-  100% {
-    transform: translateX(20px);
-    z-index: 200;
-  }
-}
-@keyframes kiri {
-  0% {
-    transform: translateX(-20px);
-    z-index: 200;
-  }
-  50% {
-    transform: translateX(20px);
-  }
-  100% {
-    transform: translateX(-20px);
-  }
-}
 @keyframes loader {
   0% {
     background-color: rgba(0, 0, 0, 0.8);
@@ -649,6 +587,30 @@ footer .footer-container a {
   100% {
     background-color: rgba(0, 0, 0, 0);
     display: none;
+  }
+}
+@keyframes child2 {
+  0% {
+    transform: translateX(-20px);
+    z-index: 200;
+  }
+  50% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(-20px);
+  }
+}
+@keyframes child4 {
+  0% {
+    transform: translateX(20px);
+  }
+  50% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateX(20px);
+    z-index: 200;
   }
 }
 /*Mise en forme du bouton "btn-purple"*/
@@ -724,7 +686,7 @@ footer .footer-container a {
 }
 
 .cards i {
-  font-size: 22px;
+  font-size: 28px;
   color: #000000;
   margin-top: 2px;
   margin-right: 20px;
@@ -757,6 +719,63 @@ footer .footer-container a {
   .underline {
     width: 3.8%;
   }
+}
+
+/*Animation d'apparition du menu */
+/* les paramètres sont dans l'ordre : 
+1- nom de l'animation
+2- nombres de cycles
+3- style du déroulement de l'animation
+4- durée de l'animation
+5- délai d'attente avant le lancement de l'animation */
+/*Les entrées*/
+.entrees {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: entries 1 1s ease-out forwards;
+}
+
+@keyframes entries {
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+.plats {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: dishes 1 1s 0.5s ease-out forwards;
+}
+
+@keyframes dishes {
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+.desserts {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: desserts 1 1s 1s ease-out forwards;
+}
+
+@keyframes desserts {
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+/*Animation de l'icône coeur*/
+.anim-heart {
+  transition: all 2s;
+}
+
+.anim-heart:hover {
+  color: transparent;
+  font-weight: bold;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(#ff79da, #9356dc);
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,6 +1,7 @@
 @import '../utils/mixins';
 @import '../utils/variables';
 @import '../utils/animation-menu';
+@import '../utils/heart-animation';
 
 /*Mise en forme du 1er menu*/
 
@@ -47,15 +48,17 @@
     right: 40px;
 
     @media screen and (min-width: 1024px) {
-      margin-right: 316px;
-      font-size: 26px;
+      top: 36px;
+      right: 344px;
+      font-size: 28px;
     }
   }
 
   /*Icone du coeur pour le menu du restaurant "A la Française"*/
   & .heart-fra {
     @media screen and (min-width: 1024px) {
-      margin-right: 344px;
+      top: 36px;
+      right: 376px;
       font-size: 26px;
     }
   }
