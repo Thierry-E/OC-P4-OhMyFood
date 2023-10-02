@@ -42,8 +42,9 @@
     transition: all 200ms ease-in-out;
   }
 
-  &:hover .fa-solid {
+  &:hover .fa-solid,
+  .heart-fra:hover {
     opacity: 1;
-    transform: scale(1.1);
+    transform: scale(1.15);
   }
 }

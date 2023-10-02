@@ -168,9 +168,10 @@ footer .footer-container a {
   opacity: 0;
   transition: all 200ms ease-in-out;
 }
-.menu-title:hover .fa-solid {
+.menu-title:hover .fa-solid,
+.menu-title .heart-fra:hover {
   opacity: 1;
-  transform: scale(1.1);
+  transform: scale(1.15);
 }
 
 /*Mise en page du container "location"*/
@@ -363,9 +364,10 @@ footer .footer-container a {
   opacity: 0;
   transition: all 200ms ease-in-out;
 }
-.menu-title:hover .fa-solid {
+.menu-title:hover .fa-solid,
+.menu-title .heart-fra:hover {
   opacity: 1;
-  transform: scale(1.1);
+  transform: scale(1.15);
 }
 
 /*Mise en forme du 1er menu*/
@@ -829,9 +831,10 @@ footer .footer-container a {
   opacity: 0;
   transition: all 200ms ease-in-out;
 }
-.menu-title:hover .fa-solid {
+.menu-title:hover .fa-solid,
+.menu-title .heart-fra:hover {
   opacity: 1;
-  transform: scale(1.1);
+  transform: scale(1.15);
 }
 
 /*# sourceMappingURL=style.css.map */
