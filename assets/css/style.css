@@ -145,16 +145,32 @@ footer .footer-container a {
 }
 
 /*Animation de l'icône coeur*/
-.anim-heart {
-  transition: all 2s;
-}
-
-.anim-heart:hover {
+/*Animation des coeurs de la page index.html*/
+.cards .fa-solid {
   color: transparent;
-  font-weight: bold;
+  background-image: linear-gradient(to top, #ff79da, #9356dc);
   background-clip: text;
   -webkit-background-clip: text;
-  background-image: linear-gradient(#ff79da, #9356dc);
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+}
+.cards:hover .fa-solid {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/*Animation des coeurs des pages menus*/
+.menu-title .fa-solid {
+  color: transparent;
+  background-image: linear-gradient(to top, #ff79da, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+}
+.menu-title:hover .fa-solid {
+  opacity: 1;
+  transform: scale(1.1);
 }
 
 /*Mise en page du container "location"*/
@@ -324,16 +340,32 @@ footer .footer-container a {
   }
 }
 /*Animation de l'icône coeur*/
-.anim-heart {
-  transition: all 2s;
-}
-
-.anim-heart:hover {
+/*Animation des coeurs de la page index.html*/
+.cards .fa-solid {
   color: transparent;
-  font-weight: bold;
+  background-image: linear-gradient(to top, #ff79da, #9356dc);
   background-clip: text;
   -webkit-background-clip: text;
-  background-image: linear-gradient(#ff79da, #9356dc);
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+}
+.cards:hover .fa-solid {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/*Animation des coeurs des pages menus*/
+.menu-title .fa-solid {
+  color: transparent;
+  background-image: linear-gradient(to top, #ff79da, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+}
+.menu-title:hover .fa-solid {
+  opacity: 1;
+  transform: scale(1.1);
 }
 
 /*Mise en forme du 1er menu*/
@@ -688,8 +720,16 @@ footer .footer-container a {
 .cards i {
   font-size: 28px;
   color: #000000;
-  margin-top: 2px;
-  margin-right: 20px;
+  position: absolute;
+  top: 174px;
+  right: 22px;
+}
+@media screen and (min-width: 1024px) {
+  .cards i {
+    font-size: 28px;
+    top: 250px;
+    right: 20px;
+  }
 }
 
 /*Mise ne forme du badge "Nouveau"*/
@@ -766,16 +806,32 @@ footer .footer-container a {
   }
 }
 /*Animation de l'icône coeur*/
-.anim-heart {
-  transition: all 2s;
-}
-
-.anim-heart:hover {
+/*Animation des coeurs de la page index.html*/
+.cards .fa-solid {
   color: transparent;
-  font-weight: bold;
+  background-image: linear-gradient(to top, #ff79da, #9356dc);
   background-clip: text;
   -webkit-background-clip: text;
-  background-image: linear-gradient(#ff79da, #9356dc);
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+}
+.cards:hover .fa-solid {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/*Animation des coeurs des pages menus*/
+.menu-title .fa-solid {
+  color: transparent;
+  background-image: linear-gradient(to top, #ff79da, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+}
+.menu-title:hover .fa-solid {
+  opacity: 1;
+  transform: scale(1.1);
 }
 
 /*# sourceMappingURL=style.css.map */

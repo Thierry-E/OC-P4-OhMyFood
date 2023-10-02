@@ -53,6 +53,12 @@
 .cards i {
   font-size: 28px;
   color: $text-black;
-  margin-top: 2px;
-  margin-right: 20px;
+  position: absolute;
+  top: 174px;
+  right: 22px;
+  @media screen and (min-width: 1024px) {
+    font-size: 28px;
+    top: 250px;
+    right: 20px;
+  }
 }
