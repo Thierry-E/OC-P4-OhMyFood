@@ -106,6 +106,22 @@
         font-weight: 300;
       }
     }
+    .validate {
+      width: 5rem;
+      height: 80px;
+      background-color: $tertiary-color;
+      border-radius: 0 20px 20px 0;
+      position: relative;
+      top: -67px;
+      left: 210px;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+
+      & .validate-icon {
+        color: $text-white;
+      }
+    }
   }
   /*Mise en forme des plats du menu*/
   & .plats {
