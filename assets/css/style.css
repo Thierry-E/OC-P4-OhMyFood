@@ -59,10 +59,15 @@ h4 {
   margin-left: 20px;
 }
 
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+
 .euro {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 /*Mise en page du header*/
@@ -448,26 +453,17 @@ footer .footer-container a {
   background-color: #ffffff;
   border-radius: 20px;
   display: flex;
-  flex-direction: column;
   gap: 5px;
   box-shadow: 0px 4px 15px 0 #e6e6e6;
   padding: 15px;
   margin: 0 auto;
   margin-top: 5px;
 }
-.menu .entrees .entrees-cards .menu-title p {
+.menu .entrees .entrees-cards .menu-title h3 {
+  margin: 0 0 7px 0;
+  color: #000000;
   font-family: "Roboto", sans-serif;
-  font-size: 1.125rem;
-  font-weight: 900;
-}
-.menu .entrees .entrees-cards .menu-subtitle {
-  display: flex;
-  justify-content: space-between;
-}
-.menu .entrees .entrees-cards .menu-subtitle p {
-  font-family: "Roboto", sans-serif;
-  font-size: 0.938rem;
-  font-weight: 300;
+  font-weight: 600;
 }
 .menu .entrees .validate {
   width: 5rem;
@@ -489,7 +485,6 @@ footer .footer-container a {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 12px;
   padding-top: 35px;
   background-color: #f6f6f6;
 }
@@ -502,26 +497,15 @@ footer .footer-container a {
   background-color: #ffffff;
   border-radius: 20px;
   display: flex;
-  flex-direction: column;
-  gap: 5px;
-  box-shadow: 0px 4px 15px 0 #e6e6e6;
   padding: 15px;
   margin: 0 auto;
   margin-top: 5px;
 }
-.menu .plats .plats-cards .plats-title p {
+.menu .plats .plats-cards .plats-title h3 {
+  margin: 0 0 7px 0;
+  color: #000000;
   font-family: "Roboto", sans-serif;
-  font-size: 1.125rem;
-  font-weight: 500;
-}
-.menu .plats .plats-cards .plats-subtitle {
-  display: flex;
-  justify-content: space-between;
-}
-.menu .plats .plats-cards .plats-subtitle p {
-  font-family: "Roboto", sans-serif;
-  font-size: 0.938rem;
-  font-weight: 300;
+  font-weight: 600;
 }
 .menu .desserts {
   width: 100%;
@@ -541,26 +525,16 @@ footer .footer-container a {
   background-color: #ffffff;
   border-radius: 20px;
   display: flex;
-  flex-direction: column;
-  gap: 5px;
   box-shadow: 0px 4px 15px 0 #e6e6e6;
   padding: 15px;
   margin: 0 auto;
   margin-top: 5px;
 }
-.menu .desserts .desserts-cards .desserts-title p {
+.menu .desserts .desserts-cards .desserts-title h3 {
+  margin: 0 0 7px 0;
+  color: #000000;
   font-family: "Roboto", sans-serif;
-  font-size: 1.125rem;
-  font-weight: 500;
-}
-.menu .desserts .desserts-cards .desserts-subtitle {
-  display: flex;
-  justify-content: space-between;
-}
-.menu .desserts .desserts-cards .desserts-subtitle p {
-  font-family: "Roboto", sans-serif;
-  font-size: 0.938rem;
-  font-weight: 300;
+  font-weight: 600;
 }
 .menu button {
   width: 65%;

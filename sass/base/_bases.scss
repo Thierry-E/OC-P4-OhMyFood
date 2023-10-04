@@ -50,8 +50,14 @@ h4 {
   margin-left: 20px;
 }
 
+p {
+  @include text-font;
+  font-size: 1rem;
+}
+
 .euro {
   @include text-font;
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 600;
+  // margin: 30px 5px 0 0;
 }
