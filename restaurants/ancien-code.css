@@ -1,0 +1,141 @@
+/*Mise en forme du 1er menu*/
+
+/*Mise en forme de la section "menu"*/
+
+.menu {
+  width: 100%;
+  background-color: $light-grey2;
+  border-radius: 20px 20px 0 0;
+  display: grid;
+  place-items: center;
+  position: relative;
+  margin-top: -45px;
+
+  & .menu-title {
+    width: 100%;
+    position: relative;
+  }
+
+  & h1 {
+    @media screen and (min-width: 1024px) {
+      font-size: 1.75rem;
+    }
+  }
+
+  & i,
+  .heart-fra {
+    font-size: 24px;
+    position: absolute;
+    top: 36px;
+    right: 40px;
+
+    @media screen and (min-width: 1024px) {
+      top: 36px;
+      right: 344px;
+      font-size: 28px;
+    }
+  }
+
+  /*Icone du coeur pour le menu du restaurant "A la Française"*/
+  & .heart-fra {
+    @media screen and (min-width: 1024px) {
+      top: 36px;
+      right: 376px;
+      font-size: 26px;
+    }
+  }
+
+  /*Mise en forme des entrées du menus */
+  & .entrees {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-top: 25px;
+
+    & h4 {
+      font-weight: 300;
+      margin-left: 15px;
+    }
+
+    & .entrees-cards {
+    }
+  }
+  /*Mise en forme des plats du menu*/
+  & .plats {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 35px;
+    background-color: $light-grey2;
+
+    & h4 {
+      font-weight: 300;
+      margin-left: 15px;
+    }
+    & .plats-cards {
+      width: 95%;
+      background-color: $text-white;
+      border-radius: 20px;
+      display: flex;
+      padding: 15px;
+      margin: 0 auto;
+      margin-top: 5px;
+
+      .plats-title h3 {
+        margin: 0 0 7px 0;
+        color: $text-black;
+        @include text-font;
+        font-weight: 600;
+      }
+    }
+  }
+
+  /*Mise en forme des desserts du menu*/
+  & .desserts {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding-top: 35px;
+    background-color: $light-grey2;
+
+    & h4 {
+      font-weight: 300;
+      margin-left: 15px;
+    }
+    & .desserts-cards {
+      width: 95%;
+      background-color: $text-white;
+      border-radius: 20px;
+      display: flex;
+      @include menu-shadow;
+      padding: 15px;
+      margin: 0 auto;
+      margin-top: 5px;
+
+      .desserts-title h3 {
+        margin: 0 0 7px 0;
+        color: $text-black;
+        @include text-font;
+        font-weight: 600;
+      }
+    }
+  }
+  & button {
+    width: 65%;
+    margin: 55px 0;
+
+    @media screen and (min-width: 1024px) {
+      width: 30%;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: 1055px;
+    margin: -45px auto 0 auto;
+  }
+}

@@ -1,18 +1,5 @@
 @import '../utils/variables';
 
-/*Animation de l'icône coeur*/
-// .anim-heart {
-//   transition: all 2s;
-// }
-
-// .anim-heart:hover {
-//   color: transparent;
-//   font-weight: bold;
-//   background-clip: text;
-//   -webkit-background-clip: text;
-//   background-image: linear-gradient($secondary-color, $primary-color);
-// }
-
 /*Animation des coeurs de la page index.html*/
 .cards {
   .fa-solid {
@@ -32,19 +19,18 @@
 
 /*Animation des coeurs des pages menus*/
 
-.menu-title {
-  & .fa-solid {
+.menu-title-heart {
+  .fa-full {
     color: transparent;
     background-image: linear-gradient(to top, $secondary-color, $primary-color);
     background-clip: text;
     -webkit-background-clip: text;
     opacity: 0;
-    transition: all 200ms ease-in-out;
+    transition: all 750ms ease;
   }
 
-  &:hover .fa-solid,
-  .heart-fra:hover {
+  &:hover .fa-full {
     opacity: 1;
-    transform: scale(1.15);
+    transition: all 750ms ease;
   }
 }

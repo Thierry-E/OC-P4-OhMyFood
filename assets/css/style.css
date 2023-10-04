@@ -48,7 +48,6 @@ h3 {
   font-size: 1.125rem;
   font-weight: 400;
   color: #ffffff;
-  margin-bottom: 20px;
 }
 
 h4 {
@@ -56,7 +55,6 @@ h4 {
   font-size: 1rem;
   font-weight: 500;
   color: #10392f;
-  margin-left: 20px;
 }
 
 p {
@@ -68,6 +66,7 @@ p {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   font-weight: 600;
+  margin: 30px 5px 0 0;
 }
 
 /*Mise en page du header*/
@@ -149,7 +148,6 @@ footer .footer-container a {
   }
 }
 
-/*Animation de l'icône coeur*/
 /*Animation des coeurs de la page index.html*/
 .cards .fa-solid {
   color: transparent;
@@ -165,18 +163,17 @@ footer .footer-container a {
 }
 
 /*Animation des coeurs des pages menus*/
-.menu-title .fa-solid {
+.menu-title-heart .fa-full {
   color: transparent;
   background-image: linear-gradient(to top, #ff79da, #9356dc);
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 0;
-  transition: all 200ms ease-in-out;
+  transition: all 750ms ease;
 }
-.menu-title:hover .fa-solid,
-.menu-title .heart-fra:hover {
+.menu-title-heart:hover .fa-full {
   opacity: 1;
-  transform: scale(1.15);
+  transition: all 750ms ease;
 }
 
 /*Mise en page du container "location"*/
@@ -345,7 +342,6 @@ footer .footer-container a {
     transform: none;
   }
 }
-/*Animation de l'icône coeur*/
 /*Animation des coeurs de la page index.html*/
 .cards .fa-solid {
   color: transparent;
@@ -361,21 +357,19 @@ footer .footer-container a {
 }
 
 /*Animation des coeurs des pages menus*/
-.menu-title .fa-solid {
+.menu-title-heart .fa-full {
   color: transparent;
   background-image: linear-gradient(to top, #ff79da, #9356dc);
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 0;
-  transition: all 200ms ease-in-out;
+  transition: all 750ms ease;
 }
-.menu-title:hover .fa-solid,
-.menu-title .heart-fra:hover {
+.menu-title-heart:hover .fa-full {
   opacity: 1;
-  transform: scale(1.15);
+  transition: all 750ms ease;
 }
 
-/*Mise en forme du 1er menu*/
 /*Mise en forme de l'image*/
 .menu-img img {
   width: 100%;
@@ -383,158 +377,48 @@ footer .footer-container a {
   object-fit: cover;
 }
 @media screen and (min-width: 1024px) {
-  .menu-img img {
+  .menu-img {
     height: 484px;
   }
 }
-
-/*Mise en forme de la section "menu"*/
-.menu {
-  width: 100%;
-  background-color: #f6f6f6;
-  border-radius: 20px 20px 0 0;
-  display: grid;
-  place-items: center;
-  position: relative;
-  margin-top: -45px;
-  /*Icone du coeur pour le menu du restaurant "A la Française"*/
-  /*Mise en forme des entrées du menus */
-  /*Mise en forme des plats du menu*/
-  /*Mise en forme des desserts du menu*/
+.menu-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
 }
-.menu .menu-title {
-  width: 100%;
+.menu-title h1 {
+  font-family: "Roboto", sans-serif;
+}
+.menu-title-heart {
+  width: 70px;
   position: relative;
 }
-.menu h1 {
-  margin: 30px 0 0 18px;
-}
-@media screen and (min-width: 1024px) {
-  .menu h1 {
-    font-size: 1.75rem;
-  }
-}
-.menu i,
-.menu .heart-fra {
-  font-size: 24px;
+.menu-title-heart .fa-full,
+.menu-title-heart .fa-empty {
   position: absolute;
-  top: 36px;
-  right: 40px;
+  top: 0;
 }
-@media screen and (min-width: 1024px) {
-  .menu i,
-  .menu .heart-fra {
-    top: 36px;
-    right: 344px;
-    font-size: 28px;
-  }
+.menu-plates {
+  padding: 0 5px;
 }
-@media screen and (min-width: 1024px) {
-  .menu .heart-fra {
-    top: 36px;
-    right: 376px;
-    font-size: 26px;
-  }
+.menu-plates h4 {
+  padding-bottom: 20px;
 }
-.menu .entrees {
-  width: 100%;
+.menu-plates h4::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 5px;
+  border-bottom: 3px solid #99e2d0;
+  display: block;
+}
+.menu-plates-content {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 12px;
-  margin-top: 25px;
-}
-.menu .entrees h4 {
-  font-weight: 300;
-  margin-left: 15px;
-}
-.menu .entrees .entrees-cards {
-  width: 95%;
-  background-color: #ffffff;
-  border-radius: 20px;
-  display: flex;
-  gap: 5px;
-  box-shadow: 0px 4px 15px 0 #e6e6e6;
-  padding: 15px;
-  margin: 0 auto;
-  margin-top: 5px;
-}
-.menu .entrees .entrees-cards .menu-title h3 {
-  margin: 0 0 7px 0;
-  color: #000000;
-  font-family: "Roboto", sans-serif;
-  font-weight: 600;
-}
-.menu .plats {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding-top: 35px;
-  background-color: #f6f6f6;
-}
-.menu .plats h4 {
-  font-weight: 300;
-  margin-left: 15px;
-}
-.menu .plats .plats-cards {
-  width: 95%;
-  background-color: #ffffff;
-  border-radius: 20px;
-  display: flex;
-  padding: 15px;
-  margin: 0 auto;
-  margin-top: 5px;
-}
-.menu .plats .plats-cards .plats-title h3 {
-  margin: 0 0 7px 0;
-  color: #000000;
-  font-family: "Roboto", sans-serif;
-  font-weight: 600;
-}
-.menu .desserts {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 12px;
-  padding-top: 35px;
-  background-color: #f6f6f6;
-}
-.menu .desserts h4 {
-  font-weight: 300;
-  margin-left: 15px;
-}
-.menu .desserts .desserts-cards {
-  width: 95%;
-  background-color: #ffffff;
-  border-radius: 20px;
-  display: flex;
-  box-shadow: 0px 4px 15px 0 #e6e6e6;
-  padding: 15px;
-  margin: 0 auto;
-  margin-top: 5px;
-}
-.menu .desserts .desserts-cards .desserts-title h3 {
-  margin: 0 0 7px 0;
-  color: #000000;
-  font-family: "Roboto", sans-serif;
-  font-weight: 600;
-}
-.menu button {
-  width: 65%;
-  margin: 55px 0;
-}
-@media screen and (min-width: 1024px) {
-  .menu button {
-    width: 30%;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .menu {
-    width: 1055px;
-    margin: -45px auto 0 auto;
-  }
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 .loader {
@@ -723,18 +607,63 @@ footer .footer-container a {
   right: 20px;
 }
 
-/*Soulignement  des entrées, platset desserts*/
-.underline {
-  width: 12%;
-  height: 4px;
-  background-color: #99e2d0;
-  margin-top: -6px;
-  margin-left: 15px;
+.plate {
+  width: 95%;
+  background-color: #ffffff;
+  border-radius: 15px;
+  display: flex;
+  gap: 5px;
+  box-shadow: 0px 4px 15px 0 #e6e6e6;
+  position: relative;
+  overflow: hidden;
 }
-@media screen and (min-width: 1024px) {
-  .underline {
-    width: 3.8%;
-  }
+.plate:hover .plate-check {
+  transform: translateX(-62px);
+  transition: transform 750ms ease;
+}
+.plate-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.plate-title {
+  width: 255px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 9px;
+}
+.plate-title h3 {
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+.plate-title p {
+  color: black;
+}
+.plate-price {
+  color: #000000;
+  font-weight: 600;
+}
+.plate-check {
+  background-color: #99e2d0;
+  min-width: 60px;
+  height: 69px;
+  /*Borders*/
+  border-radius: 0 15px 15px 0;
+  /*display*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*Position*/
+  position: absolute;
+  top: 0;
+  right: -62px;
+  transform: translateX(0);
+  transition: transform 750ms ease;
+}
+.plate-check i {
+  color: white;
 }
 
 /*Animation d'apparition du menu */
@@ -781,7 +710,6 @@ footer .footer-container a {
     transform: none;
   }
 }
-/*Animation de l'icône coeur*/
 /*Animation des coeurs de la page index.html*/
 .cards .fa-solid {
   color: transparent;
@@ -797,18 +725,17 @@ footer .footer-container a {
 }
 
 /*Animation des coeurs des pages menus*/
-.menu-title .fa-solid {
+.menu-title-heart .fa-full {
   color: transparent;
   background-image: linear-gradient(to top, #ff79da, #9356dc);
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 0;
-  transition: all 200ms ease-in-out;
+  transition: all 750ms ease;
 }
-.menu-title:hover .fa-solid,
-.menu-title .heart-fra:hover {
+.menu-title-heart:hover .fa-full {
   opacity: 1;
-  transform: scale(1.15);
+  transition: all 750ms ease;
 }
 
 /*# sourceMappingURL=style.css.map */

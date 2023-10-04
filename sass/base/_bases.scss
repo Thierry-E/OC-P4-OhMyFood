@@ -38,7 +38,6 @@ h3 {
   font-size: 1.125rem;
   font-weight: 400;
   color: $text-white;
-  margin-bottom: 20px;
 }
 
 h4 {
@@ -46,7 +45,6 @@ h4 {
   font-size: 1rem;
   font-weight: 500;
   color: darken($tertiary-color, 60%);
-  margin-left: 20px;
 }
 
 p {
@@ -58,5 +56,5 @@ p {
   @include text-font;
   font-size: 1rem;
   font-weight: 600;
-  // margin: 30px 5px 0 0;
+  margin: 30px 5px 0 0;
 }
