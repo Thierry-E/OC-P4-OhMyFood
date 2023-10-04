@@ -29,8 +29,14 @@
     transition: all 750ms ease;
   }
 
+<<<<<<< HEAD
   &:hover .fa-full {
     opacity: 1;
     transition: all 750ms ease;
+=======
+  &:hover .fa-solid {
+    opacity: 1;
+    transform: scale(1.1);
+>>>>>>> parent of 71e8f4c (Correction du dernier bug concernant l'animation des icônes "coeur")
   }
 }
