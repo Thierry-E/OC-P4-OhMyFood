@@ -8,8 +8,8 @@
   background: linear-gradient($secondary-color, $primary-color);
   border: none;
   border-radius: 50px;
+  margin: 30px 0 30px 90px;
   padding: 0 20px;
-  margin: 30px 0 57px 0;
   @include text-font;
   font-size: 1rem;
   font-weight: 500;
@@ -17,6 +17,7 @@
   cursor: pointer;
   @include shadow-button;
 }
+
 .btn-purple:hover {
   opacity: 0.85;
 }

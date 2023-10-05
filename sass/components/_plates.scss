@@ -37,13 +37,16 @@
     }
 
     p {
-      color: black;
+      color: $text-black;
     }
   }
 
   &-price {
     color: $text-black;
     font-weight: 600;
+    position: absolute;
+    top: 42px;
+    right: 20px;
   }
 
   &-check {
