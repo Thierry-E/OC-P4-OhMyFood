@@ -398,12 +398,13 @@ footer .footer-container a {
 .menu-title-heart .fa-empty {
   position: absolute;
   top: 0;
+  font-size: 2rem;
 }
 .menu-plates {
   padding: 0 5px;
 }
 .menu-plates h4 {
-  padding-bottom: 20px;
+  padding: 0 0 20px 10px;
 }
 .menu-plates h4::after {
   content: "";
