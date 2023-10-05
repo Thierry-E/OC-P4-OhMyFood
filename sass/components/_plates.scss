@@ -30,14 +30,24 @@
     flex-direction: column;
     gap: 10px;
     padding: 9px;
+
     h3 {
       color: $text-black;
       @include text-font;
       font-weight: 600;
+      font-size: 1rem;
     }
 
     p {
+      width: 82%;
       color: $text-black;
+      overflow: hidden;
+      text-wrap: nowrap;
+      text-overflow: ellipsis;
+
+      @media screen and (min-width: 380px) {
+        overflow: visible;
+      }
     }
   }
 

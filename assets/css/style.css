@@ -21,8 +21,7 @@ body {
     margin: 0 auto;
   }
 }
-
-h1 {
+.main h1 {
   font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
   font-weight: 900;
@@ -30,39 +29,34 @@ h1 {
   color: #000000;
 }
 @media screen and (min-width: 1024px) {
-  h1 {
+  .main h1 {
     text-align: center;
   }
 }
-
-h2 {
+.main h2 {
   font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
   color: #000000;
   margin: 40px 0 20px 20px;
 }
-
-h3 {
+.main h3 {
   font-family: "Shrikhand", cursive;
   font-size: 1.125rem;
   font-weight: 400;
   color: #ffffff;
 }
-
-h4 {
+.main h4 {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   font-weight: 500;
   color: #10392f;
 }
-
-p {
+.main p {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
 }
-
-.euro {
+.main .euro {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   font-weight: 600;
@@ -103,6 +97,10 @@ footer {
   padding: 22px;
   position: relative;
 }
+footer h3 {
+  color: #ffffff;
+  margin: 0 0 15px 10px;
+}
 @media screen and (min-width: 1024px) {
   footer h3 {
     display: flex;
@@ -129,12 +127,17 @@ footer .footer-container a {
   font-size: 1rem;
   font-weight: 500;
   color: #ffffff;
-  margin-bottom: 15px;
+  margin: 8px 10px;
+  position: relative;
 }
 @media screen and (min-width: 1024px) {
   footer .footer-container a {
-    margin-right: 40px;
+    margin: 0 10px;
   }
+}
+footer .footer-container a i {
+  width: 22px;
+  font-size: 16px;
 }
 @media screen and (min-width: 1024px) {
   footer .footer-container a i {
@@ -371,14 +374,19 @@ footer .footer-container a {
 }
 
 /*Mise en forme de l'image*/
+.menu {
+  width: 100%;
+  background-color: #f6f6f6;
+  border-radius: 20px 20px 0 0;
+}
 .menu-img img {
   width: 100%;
   height: 238px;
   object-fit: cover;
 }
 @media screen and (min-width: 1024px) {
-  .menu-img {
-    height: 484px;
+  .menu-img img {
+    height: 530px;
   }
 }
 .menu-title {
@@ -388,7 +396,7 @@ footer .footer-container a {
   padding-top: 20px;
 }
 .menu-title h1 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Shrikhand", cursive;
 }
 .menu-title-heart {
   width: 70px;
@@ -397,12 +405,15 @@ footer .footer-container a {
 .menu-title-heart .fa-full,
 .menu-title-heart .fa-empty {
   font-size: 2rem;
+  position: absolute;
+  top: -15px;
+  left: 20px;
 }
 .menu-plates {
   padding: 0 5px;
 }
 .menu-plates h4 {
-  padding: 20px 0 20px 10px;
+  padding: 30px 0 30px 10px;
 }
 .menu-plates h4::after {
   content: "";
@@ -506,12 +517,13 @@ footer .footer-container a {
 }
 /*Mise en forme du bouton "btn-purple"*/
 .btn-purple {
-  max-width: 100%;
+  display: block;
+  margin: 30px auto;
+  width: 216px;
   height: 50px;
   background: linear-gradient(#ff79da, #9356dc);
   border: none;
   border-radius: 50px;
-  margin: 30px 0 30px 90px;
   padding: 0 20px;
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
@@ -636,9 +648,19 @@ footer .footer-container a {
   color: #000000;
   font-family: "Roboto", sans-serif;
   font-weight: 600;
+  font-size: 1rem;
 }
 .plate-title p {
+  width: 82%;
   color: #000000;
+  overflow: hidden;
+  text-wrap: nowrap;
+  text-overflow: ellipsis;
+}
+@media screen and (min-width: 380px) {
+  .plate-title p {
+    overflow: visible;
+  }
 }
 .plate-price {
   color: #000000;

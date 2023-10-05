@@ -11,50 +11,50 @@ body {
     width: 1440px;
     margin: 0 auto;
   }
-}
 
-h1 {
-  @include text-font;
-  font-size: 1.5rem;
-  font-weight: 900;
-  margin-left: 15px;
-  color: $text-black;
+  h1 {
+    @include text-font;
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-left: 15px;
+    color: $text-black;
 
-  @media screen and (min-width: 1024px) {
-    text-align: center;
+    @media screen and (min-width: 1024px) {
+      text-align: center;
+    }
   }
-}
 
-h2 {
-  @include text-font;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: $text-black;
-  margin: 40px 0 20px 20px;
-}
+  h2 {
+    @include text-font;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: $text-black;
+    margin: 40px 0 20px 20px;
+  }
 
-h3 {
-  @include title-font;
-  font-size: 1.125rem;
-  font-weight: 400;
-  color: $text-white;
-}
+  h3 {
+    @include title-font;
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: $text-white;
+  }
 
-h4 {
-  @include text-font;
-  font-size: 1rem;
-  font-weight: 500;
-  color: darken($tertiary-color, 60%);
-}
+  h4 {
+    @include text-font;
+    font-size: 1rem;
+    font-weight: 500;
+    color: darken($tertiary-color, 60%);
+  }
 
-p {
-  @include text-font;
-  font-size: 1rem;
-}
+  p {
+    @include text-font;
+    font-size: 1rem;
+  }
 
-.euro {
-  @include text-font;
-  font-size: 1rem;
-  font-weight: 600;
-  margin: 30px 5px 0 0;
+  .euro {
+    @include text-font;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 30px 5px 0 0;
+  }
 }

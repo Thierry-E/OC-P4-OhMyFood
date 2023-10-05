@@ -10,6 +10,8 @@ footer {
   position: relative;
 
   & h3 {
+    color: $text-white;
+    margin: 0 0 15px 10px;
     @media screen and (min-width: 1024px) {
       display: flex;
       justify-content: flex-end;
@@ -34,10 +36,16 @@ footer {
       font-size: 1rem;
       font-weight: 500;
       color: $text-white;
-      margin-bottom: 15px;
+      margin: 8px 10px;
+      position: relative;
 
       @media screen and (min-width: 1024px) {
-        margin-right: 40px;
+        margin: 0 10px;
+      }
+
+      i {
+        width: 22px;
+        font-size: 16px;
       }
 
       & i {
