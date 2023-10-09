@@ -27,12 +27,16 @@
 }
 
 .cards-texts {
-  min-width: 70%;
+  width: 100%;
   padding: 10px 0 0 15px;
   line-height: 30px;
   display: flex;
   justify-content: space-between;
   align-content: center;
+
+  @media screen and (min-width: 1024px) {
+    padding-left: 35px;
+  }
 }
 
 .cards-texts .title-restaurant {

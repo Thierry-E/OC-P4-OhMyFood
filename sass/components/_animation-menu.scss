@@ -7,10 +7,10 @@
 5- délai d'attente avant le lancement de l'animation */
 
 /*Les entrées*/
-.entrees {
+.entrees-anim {
   opacity: 0;
   transform: translateY(-60px);
-  animation: entries 1s ease-out forwards;
+  animation: entries 1s forwards 1.5s;
 }
 
 @keyframes entries {
@@ -21,10 +21,10 @@
 }
 
 // /*Les plats*/
-.plats {
+.plats-anim {
   opacity: 0;
   transform: translateY(-60px);
-  animation: dishes 2s ease-out forwards;
+  animation: dishes 2s ease-out forwards 1.5s;
 }
 
 @keyframes dishes {
@@ -35,10 +35,10 @@
 }
 
 //   /*Les desserts*/
-.desserts {
+.desserts-anim {
   opacity: 0;
   transform: translateY(-60px);
-  animation: desserts 3s ease-out forwards;
+  animation: desserts 3s ease-out forwards 2.5s;
 }
 
 @keyframes desserts {

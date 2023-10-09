@@ -48,8 +48,8 @@
       font-weight: 600;
       font-size: 1rem;
       overflow: hidden;
-      text-wrap: nowrap;
       text-overflow: ellipsis;
+      white-space: nowrap;
 
       @media screen and (min-width: 1024px) {
         width: 600px;
@@ -61,8 +61,8 @@
       width: 55%;
       color: $text-black;
       overflow: hidden;
-      text-wrap: nowrap;
       text-overflow: ellipsis;
+      white-space: nowrap;
 
       @media screen and (min-width: 380px) {
         overflow: visible;
