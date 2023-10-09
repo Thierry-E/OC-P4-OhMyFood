@@ -428,6 +428,11 @@ footer .footer-container a i {
   top: -15px;
   left: 20px;
 }
+@media screen and (min-width: 1024px) {
+  .menu-title-heart {
+    left: -20px;
+  }
+}
 .menu-plates {
   padding: 0 5px;
 }
@@ -677,7 +682,7 @@ footer .footer-container a i {
   padding: 9px;
 }
 .plate-title h3 {
-  width: 70%;
+  width: 80%;
   color: #000000;
   font-family: "Roboto", sans-serif;
   font-weight: 600;
