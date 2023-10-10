@@ -10,6 +10,7 @@
   @include menu-shadow;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 
   &:hover {
     .plate-check {

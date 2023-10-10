@@ -673,6 +673,7 @@ footer .footer-container a i {
   box-shadow: 0px 4px 15px 0 #e6e6e6;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 }
 .plate:hover .plate-check {
   transform: translateX(-62px);
