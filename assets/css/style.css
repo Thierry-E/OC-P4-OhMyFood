@@ -317,38 +317,47 @@ footer .footer-container a i {
 /*Les entrées*/
 .entrees-anim {
   opacity: 0;
-  transform: translateY(-60px);
-  animation: entries 1s forwards 1.5s;
+  animation: descend 2s ease forwards;
 }
 
-@keyframes entries {
-  100% {
+@keyframes descend {
+  from {
+    transform: translateY(-100%); /* Commence en haut (en dehors de l'écran) */
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0); /* Se termine en bas de l'écran */
     opacity: 1;
-    transform: none;
   }
 }
 .plats-anim {
   opacity: 0;
-  transform: translateY(-60px);
-  animation: dishes 2s ease-out forwards 1.5s;
+  animation: descend-two 2s ease forwards 2500ms;
 }
 
-@keyframes dishes {
-  100% {
+@keyframes descend-two {
+  from {
+    transform: translateY(-100%); /* Commence en haut (en dehors de l'écran) */
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0); /* Se termine en bas de l'écran */
     opacity: 1;
-    transform: none;
   }
 }
 .desserts-anim {
   opacity: 0;
-  transform: translateY(-60px);
-  animation: desserts 3s ease-out forwards 2.5s;
+  animation: descend-three 2s ease forwards 4500ms;
 }
 
-@keyframes desserts {
-  100% {
+@keyframes descend-three {
+  from {
+    transform: translateY(-100%); /* Commence en haut (en dehors de l'écran) */
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0); /* Se termine en bas de l'écran */
     opacity: 1;
-    transform: none;
   }
 }
 /*Animation des coeurs de la page index.html*/
@@ -772,38 +781,47 @@ footer .footer-container a i {
 /*Les entrées*/
 .entrees-anim {
   opacity: 0;
-  transform: translateY(-60px);
-  animation: entries 1s forwards 1.5s;
+  animation: descend 2s ease forwards;
 }
 
-@keyframes entries {
-  100% {
+@keyframes descend {
+  from {
+    transform: translateY(-100%); /* Commence en haut (en dehors de l'écran) */
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0); /* Se termine en bas de l'écran */
     opacity: 1;
-    transform: none;
   }
 }
 .plats-anim {
   opacity: 0;
-  transform: translateY(-60px);
-  animation: dishes 2s ease-out forwards 1.5s;
+  animation: descend-two 2s ease forwards 2500ms;
 }
 
-@keyframes dishes {
-  100% {
+@keyframes descend-two {
+  from {
+    transform: translateY(-100%); /* Commence en haut (en dehors de l'écran) */
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0); /* Se termine en bas de l'écran */
     opacity: 1;
-    transform: none;
   }
 }
 .desserts-anim {
   opacity: 0;
-  transform: translateY(-60px);
-  animation: desserts 3s ease-out forwards 2.5s;
+  animation: descend-three 2s ease forwards 4500ms;
 }
 
-@keyframes desserts {
-  100% {
+@keyframes descend-three {
+  from {
+    transform: translateY(-100%); /* Commence en haut (en dehors de l'écran) */
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0); /* Se termine en bas de l'écran */
     opacity: 1;
-    transform: none;
   }
 }
 /*Animation des coeurs de la page index.html*/
