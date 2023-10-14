@@ -1,0 +1,58 @@
+/*Animation d'apparition du menu */
+/* les paramètres sont dans l'ordre : 
+1- nom de l'animation
+2- nombres de cycles
+3- style du déroulement de l'animation
+4- durée de l'animation
+5- délai d'attente avant le lancement de l'animation */
+
+/*Les entrées*/
+.entrees-anim {
+  opacity: 0;
+  animation: descend 2s ease forwards;
+}
+
+@keyframes descend {
+  from {
+    transform: translateY(-100%); /* Commence en haut (en dehors de l'écran) */
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0); /* Se termine en bas de l'écran */
+    opacity: 1;
+  }
+}
+
+// /*Les plats*/
+.plats-anim {
+  opacity: 0;
+  animation: descend-two 2s ease forwards 2500ms;
+}
+
+@keyframes descend-two {
+  from {
+    transform: translateY(-100%); /* Commence en haut (en dehors de l'écran) */
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0); /* Se termine en bas de l'écran */
+    opacity: 1;
+  }
+}
+
+//   /*Les desserts*/
+.desserts-anim {
+  opacity: 0;
+  animation: descend-three 2s ease forwards 4500ms;
+}
+
+@keyframes descend-three {
+  from {
+    transform: translateY(-100%); /* Commence en haut (en dehors de l'écran) */
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0); /* Se termine en bas de l'écran */
+    opacity: 1;
+  }
+}
